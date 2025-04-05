@@ -1,127 +1,214 @@
-<link rel="stylesheet" href="https://host-bloodcloud.github.io/home/Assets/Css/styles.css">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-    font-family: 'Poppins', sans-serif;
-}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BloodCloud - Best Premium Game Server Hosting | Fast & Reliable Servers</title>
 
-/* Button Animation */
-a[style*="--clr"] {
-    position: relative;
-    display: inline-block;
-    color: rgba(255, 255, 255, .4);
-    font-size: 1.5em;
-    letter-spacing: .1em;
-    text-decoration: none;
-    text-transform: uppercase;
-    background: #262c37;
-    padding: 10px 30px;
-    transition: .5s;
-    transition-delay: .8s;
-}
+    <meta name="keywords"
+        content="game server hosting, premium game hosting, SoloCloud, Minecraft hosting, fast game servers, VPS hosting, dedicated game servers, lag-free hosting, best game hosting, cloud game hosting" />
+    <meta name="description"
+        content="BloodCloud offers premium game server hosting with high-performance hardware, low latency, and unbeatable reliability. Host your game servers with us for the best gaming experience!" />
+    <meta name="author" content="BloodCloud" />
+    <meta name="robots" content="index, follow" />
 
-a[style*="--clr"]:hover {
-    color: var(--clr);
-    letter-spacing: 0.25em;
-    text-shadow: 0 0 5px var(--clr);
-    transition-delay: 1ms;
-}
+    <meta property="og:title" content="BloodCloudCloud - Premium Game Server Hosting" />
+    <meta property="og:description" content="Get high-performance, lag-free game server hosting with SoloCloud." />
+    <meta property="og:image"
+        content="https://host-bloodcloud.github.io/minecraft/Assets/logo/BloodCloud.png" />
+    <meta property="og:url" content="https://host-bloodcloud.github.io" />
+    <meta property="og:type" content="website" />
 
-a[style*="--clr"] span {
-    position: absolute;
-    display: block;
-    background: var(--clr);
-    box-shadow: 0 0 5px var(--clr);
-}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SoloCloud - Premium Game Server Hosting" />
+    <meta name="twitter:description"
+        content="Experience top-tier game server hosting with ultra-low latency and powerful performance." />
+    <meta name="twitter:image"
+        content="https://host-bloodcloud.github.io/minecraft/Assets/logo/BloodCloud.png" />
 
-a[style*="--clr"] span:nth-child(1),
-a[style*="--clr"] span:nth-child(2) {
-    top: 0;
-    height: 1.5px;
-    width: 50.5%;
-    transform: scaleX(0);
-}
+    <link rel="shortcut icon"
+        href="https://host-bloodcloud.github.io/minecraft/Assets/logo/BloodCloud.png"
+        type="image/x-icon" />
+    <link rel="apple-touch-icon"
+        href="https://host-bloodcloud.github.io/minecraft/Assets/logo/BloodCloud.png" />
+    <link rel="stylesheet" href="https://host-bloodcloud.github.io/home/Assets/Css/styles.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
 
-a[style*="--clr"] span:nth-child(1) {
-    left: 0;
-    transform-origin: left;
-    transition: transform .5s;
-}
+    <style>
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
 
-a[style*="--clr"]:hover span:nth-child(1) {
-    transform: scaleX(1);
-    transform-origin: right;
-}
+        .button-wrapper a {
+            position: relative;
+            display: inline-block;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            text-transform: uppercase;
+            background: #262c37;
+            padding: 10px 30px;
+            transition: 0.5s;
+            transition-delay: 0.8s;
+        }
 
-a[style*="--clr"] span:nth-child(2) {
-    right: 0;
-    transform-origin: right;
-    transition: transform .5s;
-}
+        .button-wrapper a:hover {
+            color: var(--clr);
+            letter-spacing: 0.25em;
+            text-shadow: 0 0 5px var(--clr);
+            transition-delay: 1ms;
+        }
 
-a[style*="--clr"]:hover span:nth-child(2) {
-    transform: scaleX(1);
-    transform-origin: left;
-}
+        .button-wrapper a span {
+            position: absolute;
+            display: block;
+            background: var(--clr);
+            box-shadow: 0 0 5px var(--clr);
+        }
 
-a[style*="--clr"] span:nth-child(3),
-a[style*="--clr"] span:nth-child(4) {
-    top: 0;
-    height: 100%;
-    width: 1.5px;
-    transform: scaleY(0);
-    transition: transform .5s;
-    transition-delay: .4s;
-}
+        .button-wrapper a span:nth-child(1),
+        .button-wrapper a span:nth-child(2) {
+            width: 50.5%;
+            height: 1.5px;
+            top: 0;
+        }
 
-a[style*="--clr"] span:nth-child(3) {
-    right: 0;
-    transform-origin: bottom;
-}
+        .button-wrapper a span:nth-child(1) {
+            left: 0;
+            transform-origin: left;
+            transform: scaleX(0);
+            transition: transform 0.5s;
+        }
 
-a[style*="--clr"]:hover span:nth-child(3) {
-    transform: scaleY(1);
-    transform-origin: top;
-}
+        .button-wrapper a:hover span:nth-child(1) {
+            transform: scaleX(1);
+            transform-origin: right;
+        }
 
-a[style*="--clr"] span:nth-child(4) {
-    left: 0;
-    transform-origin: bottom;
-}
+        .button-wrapper a span:nth-child(2) {
+            right: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform 0.5s;
+        }
 
-a[style*="--clr"]:hover span:nth-child(4) {
-    transform: scaleY(1);
-    transform-origin: top;
-}
+        .button-wrapper a:hover span:nth-child(2) {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
 
-a[style*="--clr"] span:nth-child(5),
-a[style*="--clr"] span:nth-child(6) {
-    bottom: 0;
-    height: 1.5px;
-    width: 50.5%;
-    transform: scaleX(0);
-    transition: transform .5s;
-    transition-delay: .8s;
-}
+        .button-wrapper a span:nth-child(3),
+        .button-wrapper a span:nth-child(4) {
+            width: 1.5px;
+            height: 100%;
+            top: 0;
+        }
 
-a[style*="--clr"] span:nth-child(5) {
-    left: 0;
-    transform-origin: right;
-}
+        .button-wrapper a span:nth-child(3) {
+            right: 0;
+            transform-origin: bottom;
+            transform: scaleY(0);
+            transition: transform 0.5s;
+            transition-delay: 0.4s;
+        }
 
-a[style*="--clr"]:hover span:nth-child(5) {
-    transform: scaleX(1);
-    transform-origin: left;
-}
+        .button-wrapper a:hover span:nth-child(3) {
+            transform: scaleY(1);
+            transform-origin: top;
+        }
 
-a[style*="--clr"] span:nth-child(6) {
-    right: 0;
-    transform-origin: left;
-}
+        .button-wrapper a span:nth-child(4) {
+            left: 0;
+            transform-origin: bottom;
+            transform: scaleY(0);
+            transition: transform 0.5s;
+            transition-delay: 0.4s;
+        }
 
-a[style*="--clr"]:hover span:nth-child(6) {
-    transform: scaleX(1);
-    transform-origin: right;
-}
-</style>
+        .button-wrapper a:hover span:nth-child(4) {
+            transform: scaleY(1);
+            transform-origin: top;
+        }
+
+        .button-wrapper a span:nth-child(5),
+        .button-wrapper a span:nth-child(6) {
+            width: 50.5%;
+            height: 1.5px;
+            bottom: 0;
+        }
+
+        .button-wrapper a span:nth-child(5) {
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform 0.5s;
+            transition-delay: 0.8s;
+        }
+
+        .button-wrapper a:hover span:nth-child(5) {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        .button-wrapper a span:nth-child(6) {
+            right: 0;
+            transform-origin: left;
+            transform: scaleX(0);
+            transition: transform 0.5s;
+            transition-delay: 0.8s;
+        }
+
+        .button-wrapper a:hover span:nth-child(6) {
+            transform: scaleX(1);
+            transform-origin: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <div class="logo">
+            <img src="https://host-bloodcloud.github.io/minecraft/Assets/logo/BloodCloud.png" alt="bloodcloudlogo"
+                class="logo-img" />
+            Blood <strong class="bnodes">Cloud</strong>
+        </div>
+    </header>
+
+    <main class="error-content">
+        <h1>404 - Page Not Found</h1>
+        <p>The page you are looking for doesn't exist or has been moved.</p>
+
+        <div class="button-wrapper">
+            <a href="https://host-bloodcloud.github.io/" style="--clr:#00eeff;">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+                Go to Home
+            </a>
+            <a href="https://dsc.gg/bloodcloud" style="--clr:#fbff00;">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+                Contact Support
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Your existing footer here -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="Assets/Js/particles-config.js"></script>
+</body>
+
+</html>
